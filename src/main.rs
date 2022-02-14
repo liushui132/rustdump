@@ -25,11 +25,8 @@ fn main() {
         _ => help_dump(),
 
     } 
-    //let res =direct_dump(1312,"fdsfds.dmp");
-    // match res {
-    //     1 =>println!("[+]fockdump success"),
-    //     other => println!("[-]fockdump error")
-    // }
+    //let res =direct_dump(1312,"./fdsfds.dmp\0");
+    //let res =fock_dump();
 
     println!("[+]dump finish")
 }

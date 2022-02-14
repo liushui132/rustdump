@@ -19,3 +19,9 @@ features = [
     "Win32_Storage_FileSystem",
     "Win32_System_Memory",
 ]
+
+[dependencies]
+winapi = { version = "0.3", features = ["winbase","fileapi","ntdef","winnt","guiddef","minwindef","handleapi","basetsd","memoryapi","processthreadsapi","synchapi","processenv","errhandlingapi","ntstatus","userenv","securitybaseapi"] }
+ntapi = "0.3.7"
+widestring = "0.5.1"
+kernel32-sys = "0.2.2"
